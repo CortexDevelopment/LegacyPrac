@@ -4,17 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <name>Array</name>
-    <url>https://dsc.gg/refine</url>
+    <name>Legacy</name>
+    <url>https://dsc.gg/cortex</url>
     <description>Most Modern and Support Friendly Practice Plugin</description>
 
     <organization>
-        <name>Refine Development</name>
-        <url>https://dsc.gg/refine</url>
+        <name>Cortex Development</name>
+        <url>https://dsc.gg/cortex</url>
     </organization>
 
-    <groupId>xyz.refinedev.practice</groupId>
-    <artifactId>Array</artifactId>
+    <groupId>club.cortexdev.practice</groupId>
+    <artifactId>Legacy</artifactId>
     <version>2.0</version>
 
     <repositories>
@@ -63,7 +63,7 @@
 
         <!-- Spigot Support for Knockback & HCF -->
         <dependency>
-            <groupId>xyz.refinedev.array</groupId>
+            <groupId>club.cortexdev.array</groupId>
             <artifactId>SpigotSupport</artifactId>
             <version>1.0</version>
             <scope>compile</scope>
@@ -241,15 +241,15 @@
                     <relocations>
                         <relocation>
                             <pattern>com.mongodb</pattern>
-                            <shadedPattern>xyz.refinedev.libs.com.mongodb</shadedPattern>
+                            <shadedPattern>club.cortexdev.libs.com.mongodb</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.google.gson</pattern>
-                            <shadedPattern>xyz.refinedev.libs.com.google.gson</shadedPattern>
+                            <shadedPattern>club.cortexdev.libs.com.google.gson</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>org.bson</pattern>
-                            <shadedPattern>xyz.refinedev.libs.org.bson</shadedPattern>
+                            <shadedPattern>club.cortexdev.libs.org.bson</shadedPattern>
                         </relocation>
                     </relocations>
                     <filters>
