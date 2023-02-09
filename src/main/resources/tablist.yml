@@ -6,8 +6,8 @@ TABLIST:
   USE_SORT_RANKS_OVER_CORE_HOOK: false
   HEADER:
     - ""
-    - "&c&lRefine Practice"
-    - "&7&owww.refinedev.xyz"
+    - "&c&lLegacy Practice"
+    - "&7&owww.cortexdev.club"
     - ""
   FOOTER:
     - ""
@@ -16,37 +16,37 @@ TABLIST:
     - ""
   SORT_RANKS:
     owner:
-      permission: "array.tablist.owner"
+      permission: "Legacy.tablist.owner"
       prefix: "&c&o"
       priority: 10
     manager:
-      permission: "array.tablist.manager"
+      permission: "Legacy.tablist.manager"
       prefix: "&4"
       priority: 9
     developer:
-      permission: "array.tablist.developer"
+      permission: "Legacy.tablist.developer"
       prefix: "&b"
       priority: 8
     mod:
-      permission: "array.tablist.mod"
+      permission: "Legacy.tablist.mod"
       priority: 7
     helper:
-      permission: "array.tablist.helper"
+      permission: "Legacy.tablist.helper"
       priority: 6
     builder:
-      permission: "array.tablist.builder"
+      permission: "Legacy.tablist.builder"
       priority: 5
     trial:
-      permission: "array.tablist.trial"
+      permission: "Legacy.tablist.trial"
       priority: 4
     famous:
-      permission: "array.tablist.famous"
+      permission: "Legacy.tablist.famous"
       priority: 3
     media:
-      permission: "array.tablist.media"
+      permission: "Legacy.tablist.media"
       priority: 2
     donator:
-      permission: "array.tablist.donator"
+      permission: "Legacy.tablist.donator"
       priority: 1
     default:
       permission: "none"
