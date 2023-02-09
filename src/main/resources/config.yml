@@ -1,7 +1,7 @@
 #######################################################################
 #                                                                     #
-#          Array Practice Core - Developed By Drizzy#0278             #
-#       Bought at Refine Development - https://dsc.gg/refine          #
+#          Legacy Practice Core - Developed By Vifez#1230             #
+#       &tmoa#6969 (array prac fork) - https://dsc.gg/cortex          #
 #                                                                     #
 #######################################################################
 LICENSE: ""
@@ -11,14 +11,14 @@ MONGO:
   NORMAL:
     HOST: 127.0.0.1
     PORT: 27017
-    DATABASE: Array
+    DATABASE: Legacy
     AUTHENTICATION:
       ENABLED: false
       USERNAME: ''
       PASSWORD: ''
   URI:
-    DATABASE: Array
-    CONNECTION_STRING: mongodb://127.0.0.1:27017/Array
+    DATABASE: Legacy
+    CONNECTION_STRING: mongodb://127.0.0.1:27017/Legacy
 
 SETTINGS:
   SPAWN: world:0:60.0:0:0.0:0.0
@@ -38,10 +38,10 @@ JOIN_MESSAGE:
   MESSAGE:
     - ""
     - "&c&lArray &7&l| &fPractice &7(EU)"
-    - "&7Welcome to the &cTest Server &7of &cArray Practice&7."
+    - "&7Welcome to the &cTest Server &7of &cLegacy Practice&7."
     - ""
-    - "&7Purchase Array at &chttps://dsc.gg/refine&7."
-    - "&7Engage with our community at &cdsc.gg/purge&7."
+    - "&7Download Array at &chttps://dsc.gg/cortex&7."
+    - "&7Engage with our community at &cdsc.gg/cortex&7."
     - ""
 
 QUEUE_LORE:
@@ -116,9 +116,9 @@ MATCH:
 
 
 SOCIAL:
-  DISCORD: discord.gg/refine
-  STORE: store.refinedev.xyz
-  WEBSITE: www.refinedev.xyz
+  DISCORD: discord.gg/cortex
+  STORE: cortexdev.club
+  WEBSITE: www.cortexdev.club
   TWITTER: '@RefineDev'
 
 RANKED:
