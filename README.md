@@ -1,6 +1,6 @@
 # Legacy 1.0 (a array practice fork)
 
-Legacy is a new practice plugin, Legacy is a forked version with fixed bugs and more updates! I am not denying the fact this was previously created by Drizzy, Nick, GatoGamer and a few others, but I am trying to continue this plugin with a new name!
+Legacy is a practice plugin forked of Array!
 
 ## Terms of Use
 
@@ -11,6 +11,4 @@ You are NOT allowed to:
 
 ## Credits
 
-Drizzy, Nick, Joeloeli, kayalust, GatoGamer
-
-Recode credits: tmoa & vifez
+Drizzy, Vifez, Tmoa Nick, Joeloeli, kayalust, GatoGamer
