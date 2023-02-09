@@ -1,8 +1,6 @@
-# Array 2.0
+# Legacy 1.0
 
-Just open sourcing this abandoned project. Some code is just gay, and some is decently re-usable. Do whatever you want with it,
-just add the credits provided below. As for anyone actually trying to use this, it's quite broken in places and has bugs, last I remember is
-reworking the menus, so that's a bit of information to help if you are working on it.
+Legacy is a new practice plugin, Legacy is a forked version with fixed bugs and more updates! I am not denying the fact this was previously created by Drizzy, Nick, GatoGamer and a few others, but I am trying to continue this plugin with a new name!
 
 ## Terms of Use
 
@@ -14,3 +12,5 @@ You are NOT allowed to:
 ## Credits
 
 Drizzy, Nick, Joeloeli, kayalust, GatoGamer
+
+Recode credits: tmoa & vifez
