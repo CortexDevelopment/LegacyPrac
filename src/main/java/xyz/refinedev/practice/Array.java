@@ -130,12 +130,12 @@ public class Array extends JavaPlugin {
 
         Locale.init(this);
 
-        if (!Description.getAuthor().contains("RefineDevelopment") || !Description.getName().contains("Array")
-           || !Description.getAuthor().contains("Nick_0251") || !Description.getWebsite().equalsIgnoreCase("https://dsc.gg/refine")) {
+        if (!Description.getAuthor().contains("Vifez") || !Description.getName().contains("Legacy")
+           || !Description.getAuthor().contains("Tmoa") || !Description.getWebsite().equalsIgnoreCase("https://dsc.gg/cortex")) {
             this.logger(CC.CHAT_BAR);
             this.logger("&cYou edited the plugin.yml, haha get caught in 4k");
             this.logger("&cPlease check your plugin.yml and try again.");
-            this.logger("&cDisabling Array");
+            this.logger("&cDisabling Legacy");
             this.logger(CC.CHAT_BAR);
             Bukkit.shutdown();
             return;
@@ -193,11 +193,11 @@ public class Array extends JavaPlugin {
 
         this.initExpansions();
 
-        ClassUtil.registerCommands("xyz.refinedev.practice.cmds");
-        ClassUtil.registerListeners("xyz.refinedev.practice.listeners");
+        ClassUtil.registerCommands("xyz.cortexdev.practice.cmds");
+        ClassUtil.registerListeners("xyz.cortexdev.practice.listeners");
 
         this.consoleLog("");
-        this.consoleLog("&7Initialized &cArray &7Successfully!");
+        this.consoleLog("&7Initialized &cLegacy &7Successfully!");
         this.consoleLog("&c------------------------------------------------");
     }
 
@@ -284,11 +284,11 @@ public class Array extends JavaPlugin {
      */
     public void registerPermissions() {
         PluginManager pluginManager = this.getServer().getPluginManager();
-        pluginManager.addPermission(new Permission("array.profile.ranked", PermissionDefault.OP));
-        pluginManager.addPermission(new Permission("array.duel.arena", PermissionDefault.OP));
-        pluginManager.addPermission(new Permission("array.party.privacy", PermissionDefault.OP));
-        pluginManager.addPermission(new Permission("array.party.ban", PermissionDefault.OP));
-        pluginManager.addPermission(new Permission("array.party.limit", PermissionDefault.OP));
+        pluginManager.addPermission(new Permission("legacy.profile.ranked", PermissionDefault.OP));
+        pluginManager.addPermission(new Permission("legacy.duel.arena", PermissionDefault.OP));
+        pluginManager.addPermission(new Permission("legacy.party.privacy", PermissionDefault.OP));
+        pluginManager.addPermission(new Permission("legacy.party.ban", PermissionDefault.OP));
+        pluginManager.addPermission(new Permission("legacy.party.limit", PermissionDefault.OP));
         drink.registerPermissions();
     }
 
