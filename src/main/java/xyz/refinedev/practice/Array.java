@@ -45,15 +45,6 @@ import java.util.Random;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.TimeUnit;
 
-/**
- * This Project is the property of Refine Development © 2021
- * Redistribution of this Project is not allowed
- *
- * @author Drizzy
- * Created at 2/13/2021
- * Project: Array
- */
-
 @Getter
 public class Array extends JavaPlugin {
 
@@ -120,7 +111,7 @@ public class Array extends JavaPlugin {
         GSON = GsonFactory.getPrettyGson();
         drink = Drink.get(this);
 
-        this.consoleLog("&c------------------------------------------------");
+        this.consoleLog("&b------------------------------------------------");
 
         this.configHandler = new ConfigHandler(this);
         this.configHandler.init();
@@ -198,7 +189,7 @@ public class Array extends JavaPlugin {
 
         this.consoleLog("");
         this.consoleLog("&7Initialized &cLegacy &7Successfully!");
-        this.consoleLog("&c------------------------------------------------");
+        this.consoleLog("&b------------------------------------------------");
     }
 
     @Override
