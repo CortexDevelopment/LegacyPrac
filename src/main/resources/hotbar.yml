@@ -42,7 +42,299 @@ HOTBAR_ITEMS:
   REMATCH_ACCEPT:
     NAME: "&cAccept Rematch &7(Right-Click)"
     ENABLED: true
+    MATERIAL: DIAMOND#Layout Types:
+#LOBBY, QUEUE, PARTY_LEADER (Leader Only), PARTY_MEMBER (Member Only), PARTY (Both), MATCH_SPECTATE, EVENT_SPECTATE, EVENT_WAITING
+#INTERAL (This layout means that the item's layout will be controlled by the plugin itself)
+
+HOTBAR_ITEMS:
+  QUEUE_JOIN_UNRANKED:
+    NAME: "&bJoin Unranked Queue &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: IRON_SWORD
+    DURABILITY: 0
+    SLOT: 0
+    LAYOUT_TYPE: LOBBY
+    COMMAND: "queue"
+    LORE: []
+  QUEUE_JOIN_RANKED:
+    NAME: "&bJoin Ranked Queue &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: DIAMOND_SWORD
+    DURABILITY: 0
+    SLOT: 1
+    LAYOUT_TYPE: LOBBY
+    COMMAND: "rankedqueue"
+    LORE: []
+  QUEUE_JOIN_CLAN:
+    NAME: "&bJoin Clan Queue &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: GOLD_SWORD
+    DURABILITY: 0
+    SLOT: 2
+    LAYOUT_TYPE: LOBBY
+    COMMAND: "clanqueue"
+    LORE: []
+  REMATCH_REQUEST:
+    NAME: "&bRequest Rematch &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: BLAZE_POWDER
+    DURABILITY: 0
+    SLOT: 3
+    LAYOUT_TYPE: INTERNAL
+    COMMAND: "rematch"
+    LORE: []
+  REMATCH_ACCEPT:
+    NAME: "&bAccept Rematch &7(Right-Click)"
+    ENABLED: true
     MATERIAL: DIAMOND
+    DURABILITY: 0
+    SLOT: 3
+    LAYOUT_TYPE: INTERNAL
+    COMMAND: "rematch"
+    LORE: []
+  EVENT_JOIN:
+    NAME: "&bJoin Event &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: NETHER_STAR
+    DURABILITY: 0
+    SLOT: 3
+    LAYOUT_TYPE: INTERNAL
+    COMMAND: "event join"
+    #If rematch items are added to the inventory
+    #and event join item is given then we move it to
+    #this slot specifically to prevent overriding
+    MOVE_SLOT_TO:
+      REMATCH_ADDED: 4
+    LORE: []
+  PARTY_CREATE:
+    NAME: "&bCreate Party &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: NAME_TAG
+    DURABILITY: 0
+    SLOT: 4
+    LAYOUT_TYPE: INTERNAL
+    COMMAND: "party create"
+    #Moves the item to these slots when these items are added
+    #in the inventory
+    MOVE_SLOT_TO:
+      EVENT_JOIN_ADDED: 5
+      REMATCH_ADDED: 5
+      EVENT_JOIN_AND_REMATCH_ADDED: 5
+    LORE: []
+  KIT_EDITOR:
+    NAME: "&bKit Editor &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: BOOK
+    DURABILITY: 0
+    SLOT: 8
+    LAYOUT_TYPE: LOBBY
+    COMMAND: "kiteditor"
+    LORE: []
+  QUEUE_LEAVE:
+    NAME: "&bLeave Queue &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: INK_SACK
+    DURABILITY: 1
+    SLOT: 8
+    LAYOUT_TYPE: QUEUE
+    COMMAND: "leavequeue"
+    LORE: []
+  PARTY_CLASSES:
+    NAME: "&bSelect HCF Kit &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: ENCHANTED_BOOK
+    DURABILITY: 0
+    SLOT: 1
+    LAYOUT_TYPE: PARTY
+    COMMAND: "party classes"
+    LORE: []
+  PARTY_EVENTS:
+    NAME: "&bParty Events &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: DIAMOND_AXE
+    DURABILITY: 0
+    SLOT: 2
+    LAYOUT_TYPE: PARTY_LEADER
+    COMMAND: "party event"
+    LORE: []
+  PARTY_SETTINGS:
+    NAME: "&bParty Settings &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: ANVIL
+    DURABILITY: 0
+    SLOT: 7
+    LAYOUT_TYPE: PARTY_LEADER
+    COMMAND: "party settings"
+    LORE: []
+  PARTY_DISBAND:
+    NAME: "&bDisband Party &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: INK_SACK
+    DURABILITY: 1
+    SLOT: 8
+    LAYOUT_TYPE: PARTY_LEADER
+    COMMAND: "party disband"
+    LORE: []
+  PARTY_LEAVE:
+    NAME: "&bLeave Party &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: INK_SACK
+    DURABILITY: 1
+    SLOT: 8
+    LAYOUT_TYPE: PARTY_MEMBER
+    COMMAND: "party leave"
+    LORE: []
+  PARTY_INFO:
+    NAME: "&bParty Information &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: PAPER
+    DURABILITY: 0
+    SLOT: 0
+    LAYOUT_TYPE: PARTY
+    COMMAND: "party info"
+    LORE: []
+  OTHER_PARTIES:
+    NAME: "&bDuel Other Parties &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: REDSTONE_TORCH_ON
+    DURABILITY: 0
+    SLOT: 4
+    LAYOUT_TYPE: PARTY
+    COMMAND: "party duel"
+    LORE: []
+  SPECTATOR_SHOW:
+    NAME: "&aShow Spectators &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: INK_SACK
+    DURABILITY: 10
+    SLOT: 4
+    LAYOUT_TYPE: INTERNAL
+    COMMAND: "spec show"
+    LORE: []
+  SPECTATOR_HIDE:
+    NAME: "&bHide Spectators &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: INK_SACK
+    DURABILITY: 8
+    SLOT: 4
+    LAYOUT_TYPE: INTERNAL
+    COMMAND: "spec hide"
+    LORE: []
+  SPECTATE_MENU:
+    NAME: "&bView Spectate Menu &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: INK_SACK
+    DURABILITY: 1
+    SLOT: 0
+    LAYOUT_TYPE: MATCH_SPECTATE
+    COMMAND: "specmenu"
+    LORE: []
+  SPECTATE_STOP:
+    NAME: "&b&lStop Spectating &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: INK_SACK
+    DURABILITY: 1
+    SLOT: 8
+    LAYOUT_TYPE: MATCH_SPECTATE
+    COMMAND: "stopspectating"
+    LORE: []
+  EVENT_TEAM:
+    NAME: "&bChoose a Team &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: COMPASS
+    DURABILITY: 0
+    SLOT: 0
+    LAYOUT_TYPE: EVENT_WAITING
+    COMMAND: "event teamselect"
+    LORE: []
+  EVENT_LEAVE:
+    NAME: "&bLeave Event &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: INK_SACK
+    DURABILITY: 1
+    SLOT: 8
+    LAYOUT_TYPE: EVENT
+    COMMAND: "event leave"
+    LORE: []
+  PARKOUR_SPAWN:
+    NAME: "&aBack to Checkpoint &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: ARROW
+    DURABILITY: 0
+    SLOT: 0
+    LAYOUT_TYPE: INTERNAL
+    COMMAND: ""
+    LORE: []
+  SPLEEF_MATCH:
+    NAME: "&bSpleef Shovel &7(Left-Click)"
+    ENABLED: true
+    MATERIAL: DIAMOND_SPADE
+    DURABILITY: 0
+    SLOT: 0
+    LAYOUT_TYPE: INTERNAL
+    COMMAND: ""
+    LORE: []
+  GULAG_GUN:
+    NAME: "&bGlock 19 &7(Loaded)"
+    ENABLED: true
+    MATERIAL: DIAMOND_HOE
+    DURABILITY: 0
+    SLOT: 0
+    LAYOUT_TYPE: INTERNAL
+    COMMAND: ""
+    LORE: []
+  DEFAULT_KIT:
+    NAME: "&bDefault Kit &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: BOOK
+    DURABILITY: 0
+    SLOT: 0
+    LAYOUT_TYPE: INTERNAL
+    COMMAND: ""
+    LORE: []
+
+#Custom Items that can be anything tbh and have any command with any layout
+#These will probably be overriden or will override so watch them slots boi, this is the format
+#
+# ANY_NAME:
+#    NAME: "&bTmoa is Hot &7(Right-Click)"
+#    ENABLED: true
+#    MATERIAL: DIAMOND
+#    DURABILITY: 0
+#    SLOT: 0
+#    LAYOUT_TYPE: LOBBY
+#    COMMAND: "tmoaishot"
+#    LORE: []
+#
+CUSTOM_ITEMS:
+  PROFILE_MENU:
+    NAME: "&bView Profile &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: NETHER_STAR
+    DURABILITY: 0
+    SLOT: 7
+    LAYOUT_TYPE: LOBBY
+    COMMAND: "openmenu profile_menu"
+    LORE: []
+  LEADER_KIT_EDITOR:
+    NAME: "&bKit Editor &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: BOOK
+    DURABILITY: 0
+    SLOT: 6
+    LAYOUT_TYPE: PARTY_LEADER
+    COMMAND: "kiteditor"
+    LORE: []
+  MEMBER_KIT_EDITOR:
+    NAME: "&bKit Editor &7(Right-Click)"
+    ENABLED: true
+    MATERIAL: BOOK
+    DURABILITY: 0
+    SLOT: 7
+    LAYOUT_TYPE: PARTY_MEMBER
+    COMMAND: "kiteditor"
+    LORE: []
+
     DURABILITY: 0
     SLOT: 3
     LAYOUT_TYPE: INTERNAL
