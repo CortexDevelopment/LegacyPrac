@@ -1,6 +1,6 @@
 name: Legacy
-main: club.cortexdev.practice.Legacy
-authors: [Vifez, tmoa, Cortex]
+main: xyz.refinedev.practice
+authors: [Vifez, tmoa]
 website: https://dsc.gg/cortex
 version: 2.0
 description: "Most Modern and Support Friendly Practice Plugin"
