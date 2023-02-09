@@ -61,17 +61,17 @@ public enum Locale {
     PARTY_IN_TOURNAMENT("PARTY.IN_TOURNAMENT", "&7[&cParty&7] &7Your party is currently in a tournament!"),
     PARTY_CHAT("PARTY.ENABLED_CHAT", "&aYou are now speaking in party chat!"),
     PARTY_GLOBAL("PARY.DISABLED_CHAT", "&aYou are now speaking in global chat!"),
-    PARTY_INFO("PARTY.INFO", Arrays.asList(
+    PARTY_INFO("PARTY.INFO", Legacy.asList(
             "&c&m--------&7&m-------------------------------------&c&m--------",
             "&cParty Information", "&c&m--------&7&m-------------------------------------&c&m--------",
             "&8 \u2022 &cLeader: <party_leader_name>",
             "&8 \u2022 &cPrivacy: <party_privacy>",
             "&8 \u2022 &cMembers: <party_members_formatted>",
             "&c&m--------&7&m-------------------------------------&c&m--------")),
-    PARTY_DONATOR("PARTY.DONATOR_MESSAGE", Arrays.asList(
+    PARTY_DONATOR("PARTY.DONATOR_MESSAGE", Legacy.asList(
             "&7You do not have permission to use Party Settings.",
             "&7&oPlease upgrade your core at &c&o<store>&7")),
-    PARTY_HELP("PARTY.HELP_MESSAGE", Arrays.asList(
+    PARTY_HELP("PARTY.HELP_MESSAGE", Legacy.asList(
             "&c&m--------&7&m-------------------------------------&c&m--------",
             "&cParty Commands",
             "&c&m--------&7&m-------------------------------------&c&m--------",
@@ -128,7 +128,7 @@ public enum Locale {
     CLAN_LEADER_LEAVE("CLAN.LEADER_LEAVE", "&7[&cClan&7] &7The Leader can not leave the Clan, use &c/clan disband &7to disband your Clan!"),
     CLAN_IS_BANNED("CLAN.PLAYER_BANNED", "&7[&c&lClan&7] &7That player has been banned from this clan, use &c/clan unban <profile> &7to unban."),
     CLAN_CHAT_FORMAT("CLAN.CHAT_FORMAT", "&7[&c&lClan&7] &c<player_displayname> &7» &f<message>"),
-    CLAN_HELP("CLAN.HELP_MESSAGE", Arrays.asList(
+    CLAN_HELP("CLAN.HELP_MESSAGE", Legacy.asList(
             "&c&m--------&7&m-------------------------------------&c&m--------",
             "&cClan Commands",
             "&c&m--------&7&m-------------------------------------&c&m--------",
@@ -146,7 +146,7 @@ public enum Locale {
             " &8\u2022 &c/clan leader &8<&7profile&8> &8(&7&oPromote a Profile to Leader&8)",
             " &8\u2022 &c/clan description &8<&7text&8> &8(&7&oSet your Clan's Description&8)",
             "&c&m--------&7&m-------------------------------------&c&m--------")),
-    CLAN_INFO("CLAN.INFO", Arrays.asList(
+    CLAN_INFO("CLAN.INFO", Legacy.asList(
             "&c&m--------&7&m-------------------------------------&c&m--------",
             "&c<clan_name> Information &8[&7<clan_members_size>/<clan_members_limit>&7]",
             "&c&m--------&7&m-------------------------------------&c&m--------",
@@ -183,13 +183,13 @@ public enum Locale {
 
     SETTINGS_ENABLED("SETTINGS.ENABLED", "&7You enabled &c<setting_name>&7 for your profile!"),
     SETTINGS_DISABLED("SETTINGS.DISABLED", "&7You disabled &c<setting_name>&7 for your profile!"),
-    SETTING_NOPERM("ERROR.SETTINGS_NO_PERM", Arrays.asList(
+    SETTING_NOPERM("ERROR.SETTINGS_NO_PERM", Legacy.asList(
             "&7You don't have permission to use this setting",
             "&7&oyou can upgrade your core at &c&o<store>&7&o.")
     ),
 
     RANKED_DISABLED("RANKED.DISABLED", "&cRanked has been disabled by an Admin!"),
-    RANKED_REQUIRED("RANKED.REQUIRED", Arrays.asList(
+    RANKED_REQUIRED("RANKED.REQUIRED", Legacy.asList(
             "&7You need to win at least &c<match_limit> Unranked Matches &7to queue Ranked!",
             "&7&oYou can bypass this limit by upgrading your rank at &c&o<store>")
     ),
@@ -205,22 +205,22 @@ public enum Locale {
     HCF_ROUGE_BACKSTABBED("HCF.ROUGE.BEEN-BACKSTABBED", "&c<attacker> &ehas backstabbed you!"),
     HCF_ROUGE_BACKSTABBER("HCF.ROGUE.HAVE-BACKSTABBED", "&eYou have backstabbed &c<target>&e."),
 
-    MATCH_HCF_STARTMESSAGE("MATCH.START-MESSAGE.HCF", Arrays.asList(
+    MATCH_HCF_STARTMESSAGE("MATCH.START-MESSAGE.HCF", Legacy.asList(
             "&c&lHCF Match&7!",
             "",
             "&7Pick between &cBard&7, &cArcher&7, &cRogue&7 and &cDiamond", "&7Kits and Fight to the death to &cWin!", "")
     ),
-    MATCH_TEAM_STARTMESSAGE("MATCH.START-MESSAGE.TEAM", Arrays.asList(
+    MATCH_TEAM_STARTMESSAGE("MATCH.START-MESSAGE.TEAM", Legacy.asList(
             "&c&lMatch Found!",
             "",
             "&fYou are playing on &c<arena>&f on a &cTeam Match!")
     ),
-    MATCH_SOLO_STARTMESSAGE("MATCH.START-MESSAGE.SOLO", Arrays.asList(
+    MATCH_SOLO_STARTMESSAGE("MATCH.START-MESSAGE.SOLO", Legacy.asList(
             "&c&lMatch Found!",
             "",
             "&fYou are playing on &c<arena>&f with &fPlayers: &c<player1> &7vs &c<player2>")
     ),
-    MATCH_ROUND_MESSAGE("MATCH.ROUND-MESSAGE", Arrays.asList(
+    MATCH_ROUND_MESSAGE("MATCH.ROUND-MESSAGE", Legacy.asList(
             " &c&lRound #<round_number>",
             "  &fYour Points: &c<your_points>",
             "  &fTheir Points: &c<their_points>")
@@ -247,7 +247,7 @@ public enum Locale {
     MATCH_WRONG_PORTAL("MATCH.WRONG_PORTAL", "&cYou jumped in the wrong portal!"),
     MATCH_WRONG_BED("MATCH.WRONG_BED", "&cThis is your own bed, you dumbo!"),
     MATCH_BRIDGE_SCORED("MATCH.BRIDGE_SCORED", "<relation_color_scored><scored_name> &fhas scored a Point!"),
-    MATCH_INVENTORY_MESSAGE("MATCH.INVENTORY.MESSAGE", Arrays.asList(
+    MATCH_INVENTORY_MESSAGE("MATCH.INVENTORY.MESSAGE", Legacy.asList(
             "&c&m--------&7&m-------------------------------------&c&m--------",
             "&c&lMatch Details &7(Click name to view inventory)",
             "",
@@ -279,12 +279,12 @@ public enum Locale {
     TOURNAMENT_PLAYER_LEAVE("TOURNAMENT.PLAYER-LEAVE", "&7[&cTournament&7] &c<player> &7left the tournament. &8(&c<players>/<maxPlayers>&8)"),
     TOURNAMENT_REMAINING("TOURNAMENT.REMAINING", "&7[&cTournament&7] &c<players> &7remaining out of &c<maxPlayers>"),
     TOURNAMENT_WON("TOURNAMENT.WON", "&c<winners> &7won the &c<teamSize>&7v&c<teamSize> <kit> &7Tournament!"),
-    TOURNAMENT_STARTED("TOURNAMENT.STARTED", Arrays.asList("&7[&cTournament&7] &7A &cTournament &7has started with kit &c<kit> &7and is on &cRound#<round>&7. (&c<teamSize>v<teamSize>&7)")),
-    TOURNAMENT_FORCE_STARTED("TOURNAMENT.FORCE_STARTED", Arrays.asList("&7[&cTournament&7] &7The &cTournament &7has been force-started, starting in &c10 seconds&7.")),
-    TOURNAMENT_ANNOUNCEMENT("TOURNAMENT.ANNOUNCEMENT", Arrays.asList("&7[&cTournament&7] &7A &cTournament &7is being hosted with kit &c<kit>&7. (&c<teamSize>v<teamSize>&7) &a[CLICK TO JOIN]")),
-    TOURNAMENT_HELP("TOURNAMENT.HELP", Arrays.asList(
+    TOURNAMENT_STARTED("TOURNAMENT.STARTED", Legacy.asList("&7[&cTournament&7] &7A &cTournament &7has started with kit &c<kit> &7and is on &cRound#<round>&7. (&c<teamSize>v<teamSize>&7)")),
+    TOURNAMENT_FORCE_STARTED("TOURNAMENT.FORCE_STARTED", Legacy.asList("&7[&cTournament&7] &7The &cTournament &7has been force-started, starting in &c10 seconds&7.")),
+    TOURNAMENT_ANNOUNCEMENT("TOURNAMENT.ANNOUNCEMENT", Legacy.asList("&7[&cTournament&7] &7A &cTournament &7is being hosted with kit &c<kit>&7. (&c<teamSize>v<teamSize>&7) &a[CLICK TO JOIN]")),
+    TOURNAMENT_HELP("TOURNAMENT.HELP", Legacy.asList(
             "&c&m--------&7&m-------------------------------------&c&m--------",
-            "&cArray &7» Tournament Commands",
+            "&cLegacy &7» Tournament Commands",
             "&c&m--------&7&m-------------------------------------&c&m--------",
             " &8\u2022 &c/tournament list &8(&7&oList Active Tournaments&8)",
             " &8\u2022 &c/tournament host (team-size) &8(&7&oHost a tournament8&o)",
@@ -321,10 +321,10 @@ public enum Locale {
     EVENT_STARTING("EVENTS.STARTING", "&fThe &c<event_name> &fEvent will start in &c10 seconds&f..."),
     EVENT_NOT_ENOUGH_PLAYERS("EVENTS.NOT_ENOUGH_PLAYERS", "&cThere are not enough players to start this event!"),
     EVENT_KILLED("EVENTS.KILLED", "&c<killed_name> &7has died!"),
-    EVENT_NO_PERMISSION("EVENTS.NO_PERM", Arrays.asList(
+    EVENT_NO_PERMISSION("EVENTS.NO_PERM", Legacy.asList(
             "&7You do not have permission to use this.",
             "&7&oPlease upgrade your RankType at &c&<store> &7")),
-    EVENT_ANNOUNCE("EVENTS.ANNOUCE", Arrays.asList(" ",
+    EVENT_ANNOUNCE("EVENTS.ANNOUCE", Legacy.asList(" ",
             "&7\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b",
             "&7\u2b1b\u2b1b&c\u2b1b\u2b1b\u2b1b\u2b1b&7\u2b1b\u2b1b &c&l[<event_name> Event]",
             "&7\u2b1b\u2b1b&c\u2b1b&7\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b ",
@@ -333,7 +333,7 @@ public enum Locale {
             "&7\u2b1b\u2b1b&c\u2b1b\u2b1b\u2b1b\u2b1b&7\u2b1b\u2b1b &a&l[Click to Join]",
             "&7\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b", "")),
     EVENT_HOVER("EVENTS.HOVER", "&7Click to join <event_name> Event"),
-    EVENT_TEAM_WON("EVENTS.TEAM_WON", Arrays.asList(" ",
+    EVENT_TEAM_WON("EVENTS.TEAM_WON", Legacy.asList(" ",
             "&7\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b",
             "&7\u2b1b\u2b1b&c\u2b1b\u2b1b\u2b1b\u2b1b&7\u2b1b\u2b1b &c&l[<event_name> Event]",
             "&7\u2b1b\u2b1b&c\u2b1b&7\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b ",
@@ -342,7 +342,7 @@ public enum Locale {
             "&7\u2b1b\u2b1b&c\u2b1b\u2b1b\u2b1b\u2b1b&7\u2b1b\u2b1b &7<players>",
             "&7\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b",
             "")),
-    EVENT_WON("EVENTS.WON", Arrays.asList(" ",
+    EVENT_WON("EVENTS.WON", Legacy.asList(" ",
             "&7\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b",
             "&7\u2b1b\u2b1b&c\u2b1b\u2b1b\u2b1b\u2b1b&7\u2b1b\u2b1b &c&l[<event_name> Event]",
             "&7\u2b1b\u2b1b&c\u2b1b&7\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b ",
@@ -350,9 +350,9 @@ public enum Locale {
             "&7\u2b1b\u2b1b&c\u2b1b&7\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b &7&oGood game!", "&7\u2b1b\u2b1b&c\u2b1b\u2b1b\u2b1b\u2b1b&7\u2b1b\u2b1b",
             "&7\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b",
             "")),
-    EVENT_HELP("EVENTS.HELP", Arrays.asList(
+    EVENT_HELP("EVENTS.HELP", Legacy.asList(
             "&c&m--------&7&m-------------------------------------&c&m--------",
-            "&cArray &7» Event Commands",
+            "&cLegacy &7» Event Commands",
             "&c&m--------&7&m-------------------------------------&c&m--------",
             " &7* &c/event &8(&7&oView this message&8)",
             " &7* &c/event host &8(&7&oHost an Event&8)",
@@ -362,7 +362,7 @@ public enum Locale {
             " &7* &c/event leave &8(&7&oLeave an active event&8)",
             " &7* &c/event teamselect &8(&7&oView Team Selection Menu&8)",
             "&c&m--------&7&m-------------------------------------&c&m--------")),
-    EVENT_INFO("EVENTS.INFO", Arrays.asList(
+    EVENT_INFO("EVENTS.INFO", Legacy.asList(
             "&c&m--------&7&m-------------------------------------&c&m--------",
             "&c<event_name> &7» Information",
             "&c&m--------&7&m-------------------------------------&c&m--------",
@@ -419,7 +419,7 @@ public enum Locale {
     }
 
     public List<String> toList() {
-        List<String> toReturn = new ArrayList<>();
+        List<String> toReturn = new LegacyList<>();
         for ( String strings : configFile.getConfiguration().getStringList(this.path)) {
             toReturn.add(CC.translate(strings).replace("\uff5c", "┃"));
         }
@@ -430,10 +430,10 @@ public enum Locale {
      * Deploy all the non-present messages to the config
      * this works with both strings and lists
      */
-    public static void init(Array plugin) {
+    public static void init(Legacy plugin) {
         configFile = plugin.getMessagesConfig();
 
-        Arrays.stream(values()).forEach(language -> {
+        Legacy.stream(values()).forEach(language -> {
             if (configFile.getString(language.getPath()) == null || configFile.getStringList(language.getPath()) == null) {
                 if (language.getListValue() != null) {
                     configFile.set(language.getPath(), language.getListValue());
